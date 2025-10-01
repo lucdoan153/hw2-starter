@@ -46,7 +46,7 @@ let rec fac n =
 (*****************)
 
 let rec get_nth ((idx:int), (lst: 'a list)) = 
-  math lst with
+  match lst with
   | [] -> failwith "Index out of bounds"
   | h :: t ->
     if idx = 0 then h
