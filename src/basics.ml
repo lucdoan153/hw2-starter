@@ -60,8 +60,8 @@ let larger lst1 lst2 =
   else []
 
 let sum lst1 lst2 = 
-  let rec aux 1 = 
-    match 1 with 
+  let rec aux l = 
+    match l with
     | [] -> 0
     | h :: t -> h + aux t
   in
