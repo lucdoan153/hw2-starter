@@ -61,7 +61,7 @@ let larger lst1 lst2 =
 
 let sum lst1 lst2 = 
   let rec aux 1 = 
-    math 1 with 
+    match 1 with 
     | [] -> 0
     | h :: t -> h + aux t
   in
